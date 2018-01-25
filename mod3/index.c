@@ -35,6 +35,8 @@ int main()
     scanf("%s", lname);
     // 4) Display initials
     printf("Hello %s %s\n", fname, lname);
+    // To access individual members of an array, use Index
+    // notation with []
     printf("Your initials are [%c%c]\n", fname[0], lname[3]);
 
 

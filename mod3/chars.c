@@ -24,21 +24,20 @@
 // Main Function
 int main()
 {
-    char input, dummy;
+    char input;
     int age;
-    printf("Do you like to code?:\n");
+    printf("Do you liked to code?:\n");
     scanf("%c", &input);
     printf("1)You entered [%c]\n", input);
-    
-    printf("Enter your age:\n");
-    scanf("%d", &age);
-    printf("Your age is [%d]\n", age);
-
     printf("Do you really like to code?:\n");
-    scanf("%c %c", &dummy,  &input);
+    //use an empty space becfore %c. this will take care of the previous ENTER char
+    scanf(" %c", &input);
     printf("2)You entered [%c]\n", input);
     printf("3)You entered [%c]\n", input);
 
+    printf("Enter your age:\n");
+    scanf("%d", &age);
+    printf("Your age is [%d]\n", age);
     return 0;
 }
 // Function Definitions
